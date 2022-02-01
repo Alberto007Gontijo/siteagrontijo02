@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGROntijo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS_carrossel/gallery.theme.css">
+    <link rel="stylesheet" href="CSS_carrossel/gallery.min.css">
+    <link rel="stylesheet" type="text/css" href="CSS_tamanho_imagem/wing.min.css">
+</head>
+<body>
+    <nav class = "nav">
+        <ul>
+            <li>
+                <a href="index.html">Principal</a>
+            </li>
+            <li class =  "drop">
+                <a href = "">Serviços</a>
+                    <ul class="dropdown">
+                        <li><a href="sites.html">Sites</a></li>
+                        <li><a href="redes_sociais.html">Redes Sociais</a></li>
+                        <li><a href="casa_inteligente.html">Casa Inteligente</a></li>
+                        <li><a href="planilhas.html">Planilhas</a></li>
+                    </ul>
+            </li>
+            <li>
+                <a href="quem_somos.html">Quem Somos</a>
+            </li>
+            <li>
+                <a href="contato.html">Contato</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="cabecalho">
+        <div class="logo">
+                    <img class = 'logo' src="imagens/logo_500.png" alt="">
+        </div>
+        <div class="escrita">
+                <h1 id="titulo">Desenvolvimento de Sites  </h1>
+        </div>
+    </div>    
+        <div class="caixa">
+            <p id="texto">
+            Coloque seu negócio no mapa! Desenvolvemos seu site institucional com todas informações importantes para divulgar seu produto com foco em estilo e comunicação simples e agradável.
+            </p>
+        </div>
+
+        <div class="gallery autoplay items-3">
+
+            <div id="item-1" class="control-operator"></div>
+            <div id="item-2" class="control-operator"></div>
+            <div id="item-3" class="control-operator"></div>
+    
+            
+    
+            <figure class="item">
+                <picture >
+                <source media="(max-width: 600px)" srcset="imagens/site/pc_300.png" type="image/png">
+                <source media="(max-width: 1050px)" srcset="imagens/site/pc_700.png" type="image/png">
+                <img  src="imagens/site/pc_1000.png" alt="Imagem flexível">
+                </picture>
+            </figure>
+    
+            <figure class="item">
+                <picture >
+                    <source media="(max-width: 600px)" srcset="imagens/site/tablet_300.png" type="image/png">
+                    <source media="(max-width: 1050px)" srcset="imagens/site/tablet_700.png" type="image/png">
+                    <img src="imagens/site/tablet_1000.png" alt="Imagem flexível">
+                </picture>
+            </figure>
+    
+    
+            <figure class="item">
+                <picture >
+                    <source media="(max-width: 600px)" srcset="imagens/site/mobile_normal_300.png" type="image/png">
+                    <source media="(max-width: 1050px)" srcset="imagens/site/mobile_normal_700.png" type="image/png">
+                    <img src="imagens/site/mobile_normal_1000.png" alt="Imagem flexível">
+                </picture>
+            </figure>
+            
+        
+    
+            </div>
+      
+           
+                    
+    <footer>
+        <p class = "main"> 2020 &copy AGROntijo Tecnologia | Alberto Gontijo | Design by <a href="https://agrontijo.com">AGROntijo</a>
+
+        </p>
+    </footer>
+    <script>
+        $(".drop")
+        .mouseover(function() {
+        $(".dropdown").show(300);
+        });
+        $(".drop")
+        .mouseleave(function() {
+        $(".dropdown").hide(300);     
+        });
+    </script>
+
+    
+
+    
+</body>
+</html>

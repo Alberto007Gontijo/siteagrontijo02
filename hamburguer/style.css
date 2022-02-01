@@ -1,0 +1,219 @@
+header{
+width: 100%;
+background-color: #292566;
+padding: 10px 20px;
+position: fixed;
+top: 0px;
+z-index: 999;
+
+}
+
+.navbar{
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+body {
+    -moz-osx-font-smoothing:grayscale;
+    -ms-flex-direction: column;
+    direction:normal;
+    -webkit-box-orient:vertical;
+    -webkit-font-smoothing:antialiased;
+    background-image: url(imagens/fundo\ 4000.png);
+    color:rgb(19, 14, 14);
+    display:flex;
+    flex-direction:column;
+    font-family:Montserrat, sans-serif;
+    font-size: 1em;
+    font-weight:300;
+    margin:0;
+    min-height:100vh;
+    padding:5%;
+    position: relative;
+}
+
+
+footer {
+color: #555;
+font-size:12px;
+margin-top:50px ;
+text-align:center;
+
+}
+
+footer a {
+color:#008FEA;
+text-decoration:none;
+
+}
+  
+
+
+h1 {
+    padding: 50px;
+    text-align: center;
+    text-shadow: 10px 10px 18px rgb(22, 22, 54);
+    padding-bottom: 50px;
+    font: bold 50px arial;
+    color: rgb(56, 19, 19);
+   
+
+
+    }
+#titulo{
+    text-align: center;
+    text-indent: 10%;
+    font: bold 100px serif;
+    margin-top: 100px;
+    
+    
+}
+
+#subtitulo {
+    padding: 50px;
+    text-align: center;
+    text-shadow: 10px 10px 18px rgb(63, 100, 148);
+    font: bold 50px cursive;
+
+}
+#texto {
+    text-align: justify;
+    text-indent: 10%;
+    font: bold 30px serif;
+}
+      
+
+.hamburguer{
+    width: 30px;
+    height: 30px;
+
+    background-color: transparent;
+    border-radius: 5px;
+    border: 0;
+    position: relative;
+    cursor: pointer;
+
+    display: none;
+}
+ .hamburguer:after {
+     content: "";
+
+     position: absolute;
+     top: 35%;
+     left: 15%;
+
+     width: 70%;
+     height: 5%;
+     border-radius: 5px;
+
+     background-color: #fff;
+
+ }
+
+ .menu{
+     list-style: none;
+     display: flex;
+     align-items: center;
+
+ }
+ li{
+     margin-left: 10px;
+   
+      }
+ a {
+         display: block;
+         padding: 10px 15px; 
+         text-decoration : none;
+         color: #555;
+         transition: 0.5s ease;
+         
+ 
+    }
+    
+.logo{
+    width: 100px;
+    height: 100px;
+    
+}
+
+
+ img {
+    width: 100%;
+    height: 100%;
+ }
+ .caixa{
+    width: auto;
+    height: auto;
+    margin: 50px 150px 50px 150px;
+
+ }
+
+div ul li ul li a {
+    background: transparent;
+    color:white;
+   
+}
+
+div ul li ul li a:hover,
+div ul li ul li a:focus {
+    background: rgb(9, 10, 10);
+    color: white;
+    
+}
+div li:hover ul {
+    display: block;
+}
+
+.dropdown {
+    display: none ;
+    position: absolute;
+    background: rgb(13, 15, 15);
+    box-shadow: 0 4px 10px rgba(10, 20, 30, .4);
+}
+
+
+
+
+div ul {
+    padding: 0;
+    margin-top: 0px;
+    list-style: none;
+}
+
+div ul li {
+    
+    margin-top: 0px;
+    
+}
+@media screen and (max-width:980px){
+    .hamburguer {
+        display: block;
+        z-index: 999;
+
+    }
+    .menu{
+        position: fixed;
+        top: 0;
+        right: -100%;
+
+        height: 100vh;
+        margin: 0;
+        background-color: rgb(35, 19, 54);
+
+        flex-direction: column;
+        padding: 100px 20px;
+        width: 100%;
+        max-width: 250px;
+
+        transition: 0.5s ease ;
+    }
+    .menu.active{
+        right: 0;
+
+    }
+
+}
